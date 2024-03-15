@@ -24,7 +24,7 @@ const Front: NextPage = () => {
 
   const[loading, setLoading] = useState(true)
   const[blogs, setBlogs] = useState<any[]>([])
-  const[singleBlog, setSingleBlog] = useState()
+  const[singleBlog, setSingleBlog]:any = useState()
   
   const [open, setOpen] = useState(false);
   const [sub, setSub] = useState("");
