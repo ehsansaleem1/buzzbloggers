@@ -51,25 +51,28 @@ const Blog: NextPage = () => {
     setOpen(false)
   }
 
-  async function getBlog() {
-    setTimeout(async () => {
-      const res = await fetch('/api/getblog', {
-        method: 'POST',
-        body: JSON.stringify({
-          blog: blogId,
-          message: "Blog Id sent"
+ async function getBlog(id:any) {
+    setTimeout(async (_id = id) => {
+      if (_id != 'undefined') {
+        console.log(_id)
+        const res = await fetch('/api/getblog', {
+          method: 'POST',
+          body: JSON.stringify({
+            blog: _id,
+            message: "Blog Id sent"
+          })
         })
-      })
-      const data = await res.json()
-      console.log(data)
-      setBlog([data.blogs])
-      setLoading(false)
+        const data = await res.json()
+        console.log(data)
+        setBlog([data.blogs])
+        setLoading(false)
+      }
     }, 3000)
   }
 
   useEffect(() => {
     getBlog()
-  }, [])
+  }, [blogId])
 
   if (loading) {
     return(
