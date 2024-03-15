@@ -14,7 +14,7 @@ import { Modal } from 'react-responsive-modal';
 
 const Blog: NextPage = () => {
 
-  const router = useRouter()
+  const router:any = useRouter()
   const blogId = router.query.id
   console.log(blogId)
   const[loading, setLoading] = useState(true)
@@ -131,7 +131,7 @@ const Blog: NextPage = () => {
         {blog ? blog.map((blog) => {
           const parsedimg = blog ? JSON.parse(blog?.image) : ""
           return(
-            <div>
+            <div key={blog._id}>
             {blog ? <div className={styles.blogContent}>
               <h1>{blog.title}</h1>
               <p>{blog.postedon}</p>
