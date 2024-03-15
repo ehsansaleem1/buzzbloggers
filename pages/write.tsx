@@ -8,6 +8,7 @@ import Link from 'next/link'
 import { CldUploadWidget } from 'next-cloudinary';
 import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
+import {useState, useEffect} from 'react'
 
 const Write: NextPage = () => {
   const cookies = new Cookies();
