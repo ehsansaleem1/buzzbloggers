@@ -67,7 +67,7 @@ const Home: NextPage = () => {
               <input onChange={(e:any) => {setPassword(e.target.value)}} value={password} placeholder="Enter your password" type="password" />
               <button type='submit'>Login to your Account</button>
               <p>
-                Don't have an account? <Link href="/signup">Create one</Link>
+                Don&apos;t have an account? <Link href="/signup">Create one</Link>
               </p>
             </form>
           </div>
