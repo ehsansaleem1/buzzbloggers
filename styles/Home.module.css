@@ -1,0 +1,643 @@
+
+.main {
+  min-height: 100vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+  background: #0c0c18;
+  color: white;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.2rem;
+}
+
+.flexC {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 555px;
+}
+
+.flexC > div {
+  height: 555px;
+  width: 50%;
+  margin: 0;
+  position: relative;
+}
+
+.flexC > div >img {
+  width: 100%;
+  height: 100%;
+}
+
+.abs {
+  position: absolute;
+  bottom: 150px;
+  color: white;
+  padding: 0 2rem;
+  font-size: 2rem;
+}
+
+.btnSide {
+  text-align: center;
+  padding-right:  2rem;
+  padding-left:  2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnSide > h1 {
+  font-size: 2.5rem;
+  margin-top: 3rem;
+}
+
+.btnSide > h2 {
+  font-size: 1.4rem;
+  color: #b8b8b8;
+}
+
+.btnSide > button {
+  padding: 1.4rem 7rem;
+  border: none;
+  border-radius: 28px;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(45,131,221,1) 73%, rgba(0,212,255,1) 100%);
+  color: white;
+  font-size: 1.4rem;
+  margin-top: 4rem;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.btnSide > button:hover {
+  margin-top: 3.5rem;
+}
+
+.btnSide > form {
+  max-width: 400px;
+}
+.btnSide > form > input {
+  font-size: 1.4rem;
+  width: 90%;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+}
+.btnSide > form > button {
+  font-size: 1.3rem;
+  padding: 0.8rem 2rem;
+  border: none;
+  color: white;
+  background: #0c0c18;
+  cursor: pointer;
+}
+
+.navContain {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 2rem;
+  background: #0c0c18;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.navContain> h1 {
+  font-size: 2.1rem;
+}
+
+.navContain > ul {
+  display: flex;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.navContain > ul > a > li {
+  margin: 0 1.25rem;
+  cursor: pointer;
+}
+
+.navContain > div > button {
+  padding: 0.75rem 3rem;
+  font-size: 1.3rem;
+  border: none;
+  background: white;
+  color: #0c1022;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.formContain {
+  width: 100%;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formContain > input {
+  width: 93%;
+  font-size: 2.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  margin-bottom: 3rem;
+}
+
+.formContain > textarea {
+  width: 93%;
+  height: 24rem;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  margin-bottom: 2rem;
+}
+
+.formContain > button {
+  padding: 1rem 6rem;
+  font-size: 1.3rem;
+  border: none;
+  color: white;
+  background: #0c1022;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.loader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.blogContain {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blogContain > div {
+  display: flex;
+  border: 1px solid #0c1022;
+  padding: 1.5rem 2rem;
+  border-radius: 20px;
+  margin: 2rem 0;
+  background: #0c1022;
+  color: white;
+  box-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.blogContain > div > div {
+  max-width: 30rem;
+  margin-left: 1.5rem;
+}
+.blogContain > div > div > h1 {
+  font-size: 1.75rem;
+}
+
+.blogContain > div > div > h2 {
+  font-size: 1.3rem;
+}
+
+.blogContain > div > img {
+  border: 1px solid white;
+}
+
+.logoHead {
+  font-size: 2.75rem;
+}
+
+.bigPost {
+  max-width: 35rem;
+  margin: 0 4rem;
+  overflow: hidden;
+  height: 27rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px grey;
+}
+
+.bigPost > a > img {
+  width: 35rem;
+  height: 100%;
+  position: relative;
+}
+
+.bigPost > a > h1, .bigPost > a > h3 {
+  position: absolute;
+  max-width: 30rem;
+  margin-left: 1rem;
+}
+
+.bigPost > a > h1 {
+  bottom: 7rem;
+}
+
+.bigPost > a > h3 {
+  bottom: 5rem;
+}
+
+.blogFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.twoPosts {
+  margin-top: 1rem;
+}
+
+.post {
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px grey;
+  padding: 0.5rem 0;
+  border-radius: 10px;
+  display: flex;
+}
+
+.post>img {
+  border-radius: 10px;
+  width: 16rem;
+  height: 12rem;
+}
+
+.post > div > a > h3 {
+  max-width: 16rem;
+}
+
+.post > div {
+  margin-left: 0.5rem;
+}
+
+.subSect {
+  background: #0c1022;
+  color: white;
+  padding: 2rem 3rem;
+  text-align: center;
+}
+
+.subSect > h1 {
+  font-size: 2.75rem;
+}
+
+.subSect > input {
+  width: 75%;
+  padding: 0.6rem 1rem;
+  font-size: 1.6rem;
+  border: none;
+}
+
+.subSect > button {
+  font-size: 1.6rem;
+  padding: 0.6rem 2rem;
+  background: white;
+}
+
+.ctaSect {
+  margin: 4rem 0;
+  padding: 2rem 3rem;
+  text-align: center;
+}
+
+.ctaSect > h1 {
+  font-size: 3rem;
+}
+
+.ctaSect > h3 {
+  font-size: 2.5rem;
+  color: #c7c7c7;
+}
+
+.ctaSect > a > button {
+  font-size: 2rem;
+  padding: 0.9rem 5rem;
+  border: none;
+  background: #0c1022;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.centered {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.acc {
+  background: #0c1022;
+  color: white;
+  width: 45rem;
+  padding: 2rem 2rem;
+  border-radius: 10px;
+}
+
+.btnlogout {
+  padding: 0.6rem 2.5rem;
+  font-size: 1.4rem;
+  background: white;
+  border: none;
+}
+
+.about {
+
+  padding: 3rem 2rem;
+}
+
+.about > h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+.about > p {
+  font-size: 1.3rem;
+}
+
+.blogContent {
+  padding: 2rem 1rem;
+}
+
+.blogContent > h3 {
+  font-size: 1.6rem;
+  line-height: 50px;
+}
+
+.modalinp {
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+
+
+.mobileNav {
+  display: none;
+}
+
+.navContain > button {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navContain {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .modBtn {
+    display: block;
+  }
+
+  .navContain > ul, .navContain> div {
+    display: none;
+  }
+
+  .navContain > button {
+    padding: 0.5rem 1.2rem;
+    font-size: 1.6rem;
+    background: white;
+    color: #0c1022;
+    border: none;
+    margin-left: 1rem;
+    display: block;
+  }
+
+  .blogFlex {
+    flex-direction: column;
+  }
+
+  .bigPost, .bigPost> img {
+    height: 30rem;
+    width: 100%;
+  }
+
+  .bigPost {
+    margin-top: 2rem;
+  }
+
+  .post {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .post > img {
+    width: 100%;
+  }
+
+  .blogContain > div {
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+
+  .blogContain > div > img {
+    width: 100%;
+  }
+
+  .subSect {
+    padding: 1rem 0.5rem;
+    width: 100%;
+  }
+
+  .subSect > input {
+    width: 100%;
+  }
+
+  .subSect > button {
+    margin-top: 2rem;
+  }
+
+  .ctaSect {
+    margin: 4rem 0;
+    padding: 2rem 0.5rem;
+    text-align: center;
+  }
+
+  .ctaSect > h1 {
+    font-size: 1.9rem;
+  }
+
+  .ctaSect > h3 {
+    font-size: 1.7rem;
+    color: #c7c7c7;
+  }
+
+  .ctaSect > a > button {
+    font-size: 2rem;
+    padding: 0.9rem 2rem;
+    border: none;
+    background: #0c1022;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .mobileNav {
+    display: block;
+    height: 100vh;
+    display: fixed;
+    background: #0c1022;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    padding: 0 2rem;
+    left: -50rem;
+    transition: all .3s ease-in-out;
+  }
+
+  .mobileNav > h1 {
+    text-align: right;
+  }
+
+  .mobileNav > ul > a > li {
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
+  }
+
+  .mobileNav > ul {
+    list-style: none;
+    padding-top: 0.5rem;
+  }
+
+  .mobileNav > div > button {
+    padding: 0.8rem 6rem;
+  }
+
+  .bigPost > a > h1, .bigPost > a > h3 {
+    position: relative;
+    bottom: 10rem;
+  }
+
+  .formContain > button {
+    margin: 2rem 0;
+  }
+
+  .acc {
+    margin-top: 2rem;
+  }
+
+  .blogContent > img {
+    width: 21.25rem;
+    height: 30rem;
+  }
+
+  .blogContent > h3 {
+    font-size: 1.5rem;
+  }
+
+  .blogContent > h2 {
+    font-size: 1.3rem;
+  }
+
+  .imgSide {
+    display: none;
+  }
+
+  .flexC > div {
+    width: 100%;
+  }
+}
