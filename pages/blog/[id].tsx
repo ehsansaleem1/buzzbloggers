@@ -71,7 +71,7 @@ const Blog: NextPage = () => {
   }
 
   useEffect(() => {
-    getBlog()
+    getBlog(blogId)
   }, [blogId])
 
   if (loading) {
